@@ -39,6 +39,8 @@ COPY rootfs /
 
 COPY dotnet-install.sh /usr
 
+RUN chmod +x /usr/dotnet-install.sh
+
 RUN /usr/dotnet-install.sh --runtime aspnetcore 
 
 # Copy data for add-on
