@@ -1,0 +1,38 @@
+{
+  "name": "FilSoft Control Panel",
+  "version": "3.120",
+  "slug": "control_panel_filsoft",
+  "description": "Control Panel by FilSoft",
+  "arch": ["armhf", "armv7", "aarch64", "amd64", "i386"],
+  "init": false,
+  "advanced": true,
+  "ingress": true,
+
+  "startup": "before",
+  "boot": "auto",
+  "panel_icon": "mdi:console",
+  "panel_title": "Control Panel",
+  "hassio_api": true,
+  "hassio_role": "manager",
+  "ports": {
+      "80/tcp": 80,
+      "222/tcp": 222
+  },
+  "ports_description": {
+    "80/tcp": "Control Panel server port",
+    "222/tcp": "SSH server port (make empty to disable)"
+  },
+  "map":  ["config:rw", "ssl:rw", "addons:rw", "share:rw", "backup:rw"],
+  "options": {
+    "ssh": {
+      "username": "hassio",
+      "password": ""
+    }
+  },
+  "schema": {
+    "ssh": {
+      "username": "str",
+      "password": "password"
+     }
+  }
+}
