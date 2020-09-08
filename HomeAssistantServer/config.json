@@ -1,6 +1,6 @@
 {
   "name": "FilSoft Control Panel",
-  "version": "3.123",
+  "version": "3.124",
   "slug": "control_panel_filsoft",
   "description": "Control Panel by FilSoft",
   "arch": ["armhf", "armv7", "aarch64", "amd64", "i386"],
