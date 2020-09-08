@@ -1,6 +1,6 @@
 {
   "name": "FilSoft Control Panel",
-  "version": "3.122",
+  "version": "3.123",
   "slug": "control_panel_filsoft",
   "description": "Control Panel by FilSoft",
   "arch": ["armhf", "armv7", "aarch64", "amd64", "i386"],
@@ -8,6 +8,7 @@
   "advanced": true,
   "ingress": true,
   "host_network": true,
+  "privileged": ["NET_ADMIN","SYS_ADMIN", "SYS_RAWIO", "SYS_TIME", "SYS_NICE", "SYS_RESOURCE", "SYS_PTRACE", "SYS_MODULE","DAC_READ_SEARCH"],
   
   "startup": "before",
   "boot": "auto",
