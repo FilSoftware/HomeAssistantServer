@@ -34,6 +34,8 @@ RUN 	mkdir -p /run/nginx \
 	&& apk add nginx \
 	\
 	&& echo "daemon off;" >> /etc/nginx/nginx.conf
+	#\
+	#&& echo "https://nginx.org/packages/mainline/alpine/v3.12/main/$basearch/" >> /etc/apk/repositories
 
 COPY rootfs /
 
