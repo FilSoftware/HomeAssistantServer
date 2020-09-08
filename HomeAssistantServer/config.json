@@ -7,7 +7,8 @@
   "init": false,
   "advanced": true,
   "ingress": true,
-
+  "network_mode": "host",
+  
   "startup": "before",
   "boot": "auto",
   "panel_icon": "mdi:console",
