@@ -1,13 +1,13 @@
 {
   "name": "FilSoft Control Panel",
-  "version": "3.121",
+  "version": "3.122",
   "slug": "control_panel_filsoft",
   "description": "Control Panel by FilSoft",
   "arch": ["armhf", "armv7", "aarch64", "amd64", "i386"],
   "init": false,
   "advanced": true,
   "ingress": true,
-  "network_mode": "host",
+  "host_network": true,
   
   "startup": "before",
   "boot": "auto",
